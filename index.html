@@ -23,22 +23,7 @@
         <div id="unity-build-title">Recorder</div>
       </div>
     </div>
-    <script src="zappar-videorecorder.js"></script>
-    <script src="recorder.js"></script>
-    <script>
-ZapparVideoRecorder.createCanvasVideoRecorder(canvas, {
-  
-}).then(recorder => {
-alert("sdf");
-  recorder.start();
-
-recorder.onComplete.bind(result => {
-  alert("result.asDataURL()");
-});
-
-recorder.stop();
-});
-      
+    <script>      
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
